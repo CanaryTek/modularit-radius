@@ -1,0 +1,6 @@
+# Map groups to ruckus roles
+DEFAULT        Group == "group1"
+                Ruckus-Role := "RuckusRole1"
+
+DEFAULT        Group == "group2"
+                Ruckus-Role := "RuckusRole2"

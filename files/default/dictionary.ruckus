@@ -1,0 +1,20 @@
+# -*- text -*-
+#
+# Ruckus dictionary.
+#
+# Enable by putting the line “$INCLUDE dictionary.ruckus” into
+# the main dictionary file.
+#
+# Version: 1.00 08-August-2012 contributed by Eric Rochow
+# $Id$
+#
+
+VENDOR Ruckus 25053
+
+# Ruckus Extensions
+
+BEGIN-VENDOR Ruckus
+
+ATTRIBUTE Ruckus-Role 1 string
+
+END-VENDOR Ruckus
