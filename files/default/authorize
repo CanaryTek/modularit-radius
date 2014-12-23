@@ -213,3 +213,5 @@ DEFAULT	Hint == "SLIP"
 
 # Include chef defined users
 $INCLUDE /etc/raddb/chef/users
+# Include local defined users and maps
+$INCLUDE /etc/raddb/local/users
