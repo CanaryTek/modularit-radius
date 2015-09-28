@@ -4,9 +4,10 @@ license           "Apache 2.0"
 description       "Installs and configures FreeRadius"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version           "0.0.1"
+name              "modularit-radius"
 recipe            "modularit-radius", "Installs and configures FreeRadius"
 
-%w{apt yum}.each do |pkg|
+%w{apt yum modularit-sambadc}.each do |pkg|
   depends pkg
 end
 

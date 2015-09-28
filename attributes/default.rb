@@ -22,7 +22,7 @@ case node['platform_family']
 when 'debian'
   default['freeradius']['packages'] = %w[PLEASE_DEFINE]
 when 'rhel','fedora'
-  default['freeradius']['packages'] = %w[freeradius]
+  default['freeradius']['packages'] = %w[freeradius wpa_supplicant]
 else
   default['freeradius']['packages'] = %w[PLEASE_DEFINE]
 end

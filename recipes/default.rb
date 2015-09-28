@@ -97,6 +97,9 @@ end
 end
 
 # FIXME: setfacl -m u:radiusd:rx /var/lib/samba/winbindd_privileged
+execute 'set-winbind-acl' do
+  command 'setfacl -m u:radiusd:rx /var/lib/samba/winbindd_privileged'
+end
 
 service "radiusd" do
   action [ :enable, :start ]
