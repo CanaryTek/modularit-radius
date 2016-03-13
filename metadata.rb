@@ -7,7 +7,7 @@ version           "0.0.1"
 name              "modularit-radius"
 recipe            "modularit-radius", "Installs and configures FreeRadius"
 
-%w{apt yum modularit-sambadc}.each do |pkg|
+%w{apt yum yum-epel modularit-sambadc}.each do |pkg|
   depends pkg
 end
 
